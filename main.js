@@ -51,7 +51,7 @@ let animate = (ctx, images, animation, callback) => {
       ctx.drawImage(image, 200, 0, 500, 500);
     }, index*100);
   });
-  setTimeout(callback, images[animation].Length * 100);
+  setTimeout(callback, images[animation].length * 100);
 };
 loadImages((images) => {
   let queuedAnimations = [];
