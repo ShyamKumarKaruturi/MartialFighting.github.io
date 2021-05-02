@@ -49,7 +49,7 @@ let animate = (ctx, images, animation, callback) => {
     setTimeout(() => {
       ctx.clearRect(200, 0, 500, 500);
       ctx.drawImage(image, 200, 0, 500, 500);
-    }, 100);
+    }, index*100);
   });
   setTimeout(callback, images[animation].Length * 100);
 };
