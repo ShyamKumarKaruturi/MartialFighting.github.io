@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fight!</title>
+    <style>
+      .button {
+        transition-duration: 0.4s;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 12px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 2px solid #230883;
+        margin:2px 23px;
+      }
+      .button:hover {
+        background-color: #4f0761; /* Green */
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="MainHeading" style="text-align: center">Martial Fight is ON!</h1>
+    <div style="background-image: url('background.jpg'); opacity:0.75" width="450px" height="1200px">
+    <canvas
+      id="myCanvas"
+      height="500px"
+      width="1257px"
+      style="border: 2px solid rgb(119, 8, 8)"
+      ;
+    ></canvas>
+    <table>
+      <centre>
+        <button class="button" id="punch">Punch [Key "A"]</button>
+        <button class="button" id="kick">Kick [Key "S"]</button>
+        <button class="button" id="block">Block [Space Bar]</button>
+        <button class="button" id="backward">Backward [Left Arrow]</button>
+        <button class="button" id="forward">Forward [Right Arrow]</button>
+        <script type="text/javascript" src="main.js"></script>
+      </centre>
+    </table>
+  </body>
+</html>
